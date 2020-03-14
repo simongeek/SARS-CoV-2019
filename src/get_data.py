@@ -60,4 +60,4 @@ class CoV2019data:
 
 if __name__ == "__main__":
     data = CoV2019data(output_data_name="data_cov2019")
-    print(data.save_data())
+    data.save_data()
