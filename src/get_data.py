@@ -45,7 +45,7 @@ class CoV2019data:
         for cols in self.get_data():
             country = cols[0]
             total_cases = cols[1].replace(",", "")
-            new_cases = cols[2].replace("+", "")
+            new_cases = cols[2].replace(",", "").replace("+", "")
             total_deaths = cols[3].replace(",", "")
             new_deaths = cols[4].replace("+", "")
             total_recovered = cols[5].replace(",", "")
